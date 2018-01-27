@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="5px" viewBox="0 0 7 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="My-investment-documents" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-115.000000, -160.000000)">
+        <g id="Group-6" transform="translate(49.000000, 152.000000)" fill="#304152" stroke="#304152">
+            <path d="M68.25,10.6035534 L71.2595215,10.6035534 C71.5304053,10.6035534 71.75,10.835487 71.75,11.1035534 C71.75,11.3796958 71.5349426,11.6035534 71.2595215,11.6035534 L68.2404785,11.6035534 C67.9695947,11.6035534 67.75,11.3716198 67.75,11.1035534 C67.4738576,11.1035534 67.25,10.888496 67.25,10.6130749 L67.25,7.59403191 C67.25,7.3231481 67.4819336,7.10355339 67.75,7.10355339 C68.0261424,7.10355339 68.25,7.31861076 68.25,7.59403191 L68.25,10.6035534 Z" id="Arrow" transform="translate(69.500000, 9.353553) rotate(-45.000000) translate(-69.500000, -9.353553) "></path>
+        </g>
+    </g>
+</svg>

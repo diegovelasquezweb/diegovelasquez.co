@@ -1,0 +1,156 @@
+main.login {
+  .tabs__menu {
+    width: 100%;
+    li {
+      width: 50%;
+      background: $gray;
+      &.current {
+        position: relative;
+        z-index: 5;
+        background: white;
+      }
+      a {
+        color: $blue;
+        padding: 29px 20px;
+        font-size: 20px;
+        @include proxima(400);
+        text-align: center;
+        display: block;
+        text-transform: capitalize;
+        @media screen and (max-width: 480px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.tabs__container {
+  width: 100%;
+  padding: 50px 80px;
+  .tabs__content,
+  .tabs__content--modal,
+  .tabs__content--vertical {
+    width: 100%;
+    display: none;
+    height: 100%;
+
+  }
+  .tabs__content--modal:first-child,
+  .tabs__content--portfolio:first-child {
+    display: flex;
+    visibility: visible;
+  }
+}
+
+.tabs__content--modal,
+.tabs__content--vertical,
+.tabs__content--portfolio {
+  padding: 0px !important;
+}
+
+.tabs__content--portfolio {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  &.active {
+    visibility: visible;
+  }
+}
+
+#tab-general,
+#tab-overview,
+#tab-projectDetails,
+#tab-all,
+#tab-all-documents,
+#tab-personal{
+  display: flex;
+
+}
+
+main.properties,
+main.portfolio,
+main.account {
+  .tabs__menu,
+  .tabs__menu--modal {
+    background: #ffffff;
+    border-bottom: 1px solid $grayDark;
+    z-index: 9;
+    .container {
+      max-width: 94%;
+    }
+    li {
+      margin-right: 30px;
+      &.current a {
+        @include proxima(500);
+        font-size: 16px;
+        padding: 20px 10px;
+        display: block;
+        color: $blue;
+        border-bottom: 3px solid $pink;
+      }
+    }
+    a {
+      @include proxima(500);
+      font-size: 16px;
+      color: #b6c0cc;
+      padding: 20px 10px;
+      display: block;
+      border-bottom: 3px solid white;
+      &:hover {
+        color: $blue;
+        border-bottom: 3px solid $pink;
+      }
+    }
+  }
+}
+
+.tabs__menu--vertical {
+  z-index: 9;
+  width: 20%;
+  li {
+    &.current a {
+      @include proxima(600);
+    }
+  }
+  a {
+    @include proxima(500);
+    font-size: 14px;
+    padding: 0 0 20px;
+    display: block;
+    color: $blue;
+    &:hover {
+      @include proxima(600);
+    }
+  }
+}
+
+.tabs__container--vertical {
+  width: 80%;
+}
+
+.tabs__menu--portfolio {
+  z-index: 9;
+  a {
+    @include proxima(500);
+    font-size: 14px;
+    padding: 0 0 20px;
+    display: block;
+    color: #b9b9b9;
+    text-transform: uppercase;
+    &:hover {
+
+      color: $blue;
+    }
+  }
+  li.current a {
+
+    color: $blue;
+  }
+}
+
+.tabs__container--portfolio {
+  width: 100%;
+}

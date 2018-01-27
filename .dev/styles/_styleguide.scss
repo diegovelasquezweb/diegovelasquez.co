@@ -1,0 +1,30 @@
+// @colors
+$gray: #E7EAEF;
+$grayLight: #F9F7F6;
+$grayDark: #E7E7E7;
+$black: #030710;
+$white: #ffffff;
+$blue: #304152;
+$pink: #D8B3AE;
+$blueDark: #0B152B;
+//@placeholder
+::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #b6c0cc;
+}
+
+:-moz-placeholder {
+  font-size: 14px;
+  color: #b6c0cc;
+}
+
+::-moz-placeholder {
+  font-size: 14px;
+  color: #b6c0cc;
+}
+
+:-ms-input-placeholder {
+  font-size: 14px;
+  color: #b6c0cc;
+}
+

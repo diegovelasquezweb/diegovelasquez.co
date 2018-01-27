@@ -1,0 +1,239 @@
+//@reset
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  margin: 0;
+  color: $black;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h7,
+figure {
+  margin: 0;
+}
+
+blockquote,
+q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+//@grid layout
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.grid--column {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.grid--top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.grid--start {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.grid--end {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.grid--center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid--content {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex {
+  flex: 1;
+}
+
+.centerBox {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.centerBox--start {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+
+
+
+//@theme layout
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.container--inner {
+  width: 100%;
+  position: relative;
+  align-items: stretch;
+  height: 100%;
+}
+
+
+.container--small {
+  width: 48%;
+}
+
+
+// @wordpress
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//@OOCSS
+.clear {
+  clear: both;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.h100vh {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hauto {
+  height: auto;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+

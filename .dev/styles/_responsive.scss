@@ -1,0 +1,462 @@
+//@responsive mixin
+$breakpoints: ( 'mini': 375px, 'small': 480px, 'medium': 1079px, 'large': 1279px, 'big': 1366px, );
+@mixin break($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+$i: !important;
+@include break(big) {}
+
+@include break(large) {
+  nav.side {
+    display: none;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .home section.about .mycard {
+    bottom: inherit;
+    width: 100%;
+    position: relative;
+    top: 280px;
+  }
+  section.about,
+  section.about .container {
+    overflow: unset;
+    height: auto;
+    min-height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  main.login .tabs {
+    max-width: 90%;
+  }
+  header.dashboard .account {
+    display: none;
+  }
+  main.about {
+    padding-left: 0;
+    height: auto;
+  }
+  main.about .team article {
+    flex-flow: column nowrap;
+    figure {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+      img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+      }
+    }
+    .content {
+      padding: 0;
+    }
+  }
+  .team.scrollbar {
+    height: 100%;
+  }
+  main.about .contact {
+    flex-flow: column nowrap;
+    .content,
+    .form {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+  main.portfolio {
+    padding-left: 0;
+    .tabs__menu {
+      li {
+        display: none;
+      }
+      .portfolio__filter {
+        display: block $i;
+        padding: 20px;
+      }
+    }
+    article {
+      width: calc(50% - 30px);
+      .btn--white {
+        display: none $i;
+      }
+    }
+  }
+  header.dashboard {
+    padding: 0;
+    .grid {
+      justify-content: flex-start $i;
+    }
+    h1 {
+      padding: 20px;
+    }
+  }
+  .hamburger {
+    display: flex $i;
+    cursor: pointer;
+  }
+  aside.sideBar {
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    transition: left .3s;
+    &.active {
+      left: 0;
+    }
+  }
+  .closeMenu {
+    display: flex $i;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    opacity: 0;
+    transition: all .3s;
+    transform: rotate(-90deg);
+    &.active {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+  }
+  .our-story {
+    flex-flow: column nowrap;
+    width: 80%;
+    .content {
+      padding: 40px 20px 30px;
+      margin-bottom: 30px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  main.properties {
+    padding-left: 0;
+    height: auto;
+  }
+  .single-properties-post {
+    overflow: auto;
+  }
+  main.properties .timeline .timeline__items {
+    width: 100%;
+  }
+  .timeline {
+    padding: 0;
+    h2 {
+      padding: 20px 20px 0;
+    }
+  }
+  .properties--container {
+    flex-flow: column nowrap;
+    .container--small {
+      width: 100%;
+      &:nth-of-type(2) {
+        margin-top: 30px;
+        margin-left: 0;
+        position: relative;
+        display: block;
+        .btn {
+          display: block;
+          margin: 20px auto 0;
+        }
+      }
+    }
+  }
+  main.properties .updates {
+    height: 190px;
+  }
+  main.properties .timeline .timeline__content {
+    width: 100%;
+    position: relative;
+    border: none;
+    margin-top: 20px;
+  }
+  .tabs__container {
+    padding: 20px;
+  }
+  .documents {
+    .tabs__menu--vertical {
+      display: none;
+    }
+    .tabs__container--vertical {
+      width: 100%;
+    }
+  }
+  .documents__filter {
+    display: block $i;
+    margin: 10px 0 30px;
+    letter-spacing: .04em;
+  }
+  .table .table__titles {
+    padding-right: 0;
+  }
+  .table__titles div:nth-of-type(2),
+  .table__items div:nth-of-type(2),
+  .table__titles div:nth-of-type(5),
+  .table__items div:nth-of-type(5),
+  {
+    display: none;
+  }
+  .table__titles div,
+  .table__items div {
+    width: 30% $i;
+    padding: 10px $i;
+    .btn {
+      width: 80px;
+    }
+  }
+  .scrollbar--documents {
+    padding: 0;
+  }
+  nav.account {
+    display: block $i;
+  }
+  header.dashboard .container {
+    border: none;
+  }
+  .container--inner--small {
+    width: 94%;
+  }
+  .content--summary,
+  .content--opportunity {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .content--summary {
+    .scrollbar {
+      height: 400px;
+    }
+  }
+  .overlay .modal {
+    width: 90%;
+    height: 560px;
+    .projectDetails__map,
+    .projectDetails__items {
+      width: 100%;
+    }
+    .projectDetails__map {
+      height: 300px;
+    }
+    .projectDetails__items {
+      padding: 20px;
+      height: 160px;
+      overflow: auto;
+    }
+    .acf-map {
+      height: 100%;
+    }
+    .projectDetails .scrollbar {
+      height: 90%;
+    }
+    .projectDetails>.grid {
+      flex-flow: column nowrap;
+      width: 100%;
+      overflow: auto;
+    }
+    [data-carousel] {
+      display: none;
+    }
+    [data-slider] .slides img {
+      height: auto;
+      width: 100%;
+    }
+    .flexslider {
+      padding-bottom: 100px;
+    }
+    .slider__controls {
+      top: inherit;
+      bottom: 35px;
+      justify-content: center;
+      >a {
+        margin: 0 10px;
+      }
+    }
+    .team .team__item {
+      width: 50%;
+    }
+    .tabs__menu--modal li a span {
+      display: none;
+    }
+  }
+  main.news {
+    height: 100vh;
+    padding-left: 0px;
+    .container--inner--small {
+      height: 90%;
+      margin: 20px auto;
+    }
+  }
+  main.news article {
+    margin-right: 0;
+    flex-flow: column nowrap;
+    figure {
+      width: 100%;
+      height: 200px;
+      display: block;
+    }
+    .content {
+      margin: 20px 0 0;
+    }
+  }
+  main.login .tabs__menu li a {
+    padding: 15px 20px;
+  }
+  .logo--color {
+    display: none $i;
+  }
+  .home header nav li {
+    margin: 0 20px;
+  }
+  .scroll {
+    height: auto;
+  }
+  .home section.about {
+    margin-bottom: 0;
+    height: auto;
+  }
+  .home section.about h1 {
+    position: relative;
+    top: 0;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    z-index: 99;
+  }
+  .home section.about .mycard {
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+  }
+  .home section.about figure {
+    height: 60%;
+  }
+  .home section.portfolio .tabs__container {
+    display: block;
+    height: 800px;
+  }
+  .home section.portfolio .acf-map {
+    width: 100%;
+    height: 300px;
+  }
+  .home section.portfolio nav {
+    display: none;
+  }
+  .home .popup {
+    width: 80%;
+    top: 300px;
+    right: 10%;
+    margin: 0;
+    height: auto;
+    .scrollbar {
+      // height: auto;
+    }
+  }
+  .home section.contact .content {
+    padding: 0;
+  }
+  .sideBar .scrollbar {
+    height: 90%;
+    .account {
+      padding-bottom: 40px;
+    }
+  }
+  .overlay .modal .team {}
+  [data-tab="tab-team"] {
+    height: 442px $i;
+  }
+  main.account {
+    padding-left: 0;
+  }
+  .account .form {
+    width: 100%;
+  }
+  main.about .contact {
+    padding: 20px;
+  }
+  input,
+  button,
+  textarea {
+    -webkit-appearance: none;
+  }
+  .select--filter {
+    display: block $i;
+  }
+  #filterPortfolio {
+    position: absolute;
+    top: 414px;
+    left: 10%;
+    width: 80%;
+    border: 1px solid #f2f2f2;
+    background-color: #f7f7f7;
+    background-position: 90% center;
+    padding: 10px 30px;
+    color: #2f4152;
+    font-family: adobe-garamond-pro, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    z-index: 99999;
+  }
+  .fp-section,
+  .fp-slide,
+  .fp-tableCell {
+    height: auto !important;
+  }
+  .logo--color--mobile {
+    &.active {
+      display: block $i;
+    }
+    svg {
+      width: 140px;
+      margin-bottom: 15px;
+    }
+  }
+  .home header{
+    z-index: 999999;
+    padding: 15px 0;
+    transition: all .9s;
+    .container {
+      text-align: center;
+    }
+  }
+  .home header.active a.logo--color {
+    display: none $i;
+  }
+  // close
+}
+
+@include break(small) {
+  main.portfolio article {
+    width: calc(100% - 30px)
+  }
+  .team .team__item {
+    width: 100% $i;
+  }
+  .home header nav li {
+    margin: 0 10px;
+  }
+  .home section.hero .logo svg {
+    width: 80%;
+  }
+  .popup .popup__header {
+    font-size: 20px;
+  }
+  #filterPortfolio {
+    font-size: 20px;
+  }
+}
+
+.hamburger,
+.closeMenu,
+.documents__filter,
+nav.account,
+.select--filter {
+  display: none;
+}
+
+.logo--color--mobile {
+  display: none;
+}

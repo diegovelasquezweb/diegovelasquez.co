@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Down Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page" transform="translate(-493.000000, -543.000000)" stroke="#FFFFFF">
+            <g id="Down-Arrow" transform="translate(512.000000, 562.000000) rotate(-270.000000) translate(-512.000000, -562.000000) translate(494.000000, 544.000000)">
+                <path d="M10.1932941,17.9805176 L25.5790588,17.9805176" id="Stroke-1"></path>
+                <polyline id="Stroke-2" points="22.5517235 15.3714176 25.7673706 17.9803588 22.5517235 20.5893"></polyline>
+                <path d="M35.6960647,17.9805176 C35.6960647,27.7645765 27.7649471,35.6962235 17.9803588,35.6962235 C8.1963,35.6962235 0.264652941,27.7645765 0.264652941,17.9805176 C0.264652941,8.19645882 8.1963,0.264811765 17.9803588,0.264811765 C27.7649471,0.264811765 35.6960647,8.19645882 35.6960647,17.9805176 Z" id="Stroke-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

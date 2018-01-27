@@ -1,0 +1,32 @@
+//@debug
+$debug: false;
+@if ($debug) {
+  * {
+    @debug "debug activado";
+    border: 1px solid red;
+  }
+}
+//@borders debug
+@mixin b($color) {
+  @if $color==1 {
+    border: 1px solid red;
+  }
+  @else if $color==2 {
+    border: 1px solid blue;
+  }
+  @else if $color==3 {
+    border: 1px solid green;
+  }
+}
+
+.b1 {
+  border: 1px solid red !important;
+}
+
+.b2 {
+  border: 1px solid blue !important;
+}
+
+.b3 {
+  border: 1px solid green !important;
+}
