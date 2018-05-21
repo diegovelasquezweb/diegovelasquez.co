@@ -12,15 +12,25 @@
 
 
 // cierre
+$(document).ready(function() {
 
-$(".tabs-menu a").hover(function (event) {
-  event.preventDefault();
-  $(this).parent().addClass("current");
-  $(this).parent().siblings().removeClass("current");
-  var tab = $(this).attr("href");
-  $(".tab-content").not(tab).css("display", "none");
-  $(tab).fadeIn();
-});
+  $('#tabs li a:not(:first)').addClass('inactive');
+  $('.container__tab').hide();
+  $('.container__tab:first').show();
+
+  $('#tabs li a').hover(function(){
+      var t = $(this).attr('id');
+    if($(this).hasClass('inactive')){ //this is the start of our condition
+      $('#tabs li a').addClass('inactive');
+      $(this).removeClass('inactive');
+
+      $('.container__tab').hide();
+      $('#'+ t + 'C').fadeIn('slow');
+   }
+  });
+
+  });
+
 $(window).on('beforeunload', function () {
   $(window).scrollTop(0);
 });

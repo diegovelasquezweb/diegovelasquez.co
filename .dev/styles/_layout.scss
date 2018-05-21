@@ -62,6 +62,7 @@ q:after {
 }
 
 //@grid layout
+
 .grid {
   display: flex;
   flex-flow: row wrap;
@@ -131,7 +132,13 @@ q:after {
 }
 
 
-
+.column--bottom {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: center;
+}
 
 //@theme layout
 a {
